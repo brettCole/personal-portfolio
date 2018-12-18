@@ -1,0 +1,18 @@
+.slideWord {
+  animation-name: slideWord;
+  animation-iteration-count: infinite;
+}
+
+.sizeDifference {
+  line-height: 1rem;
+}
+
+@keyframes slideWord {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: auto;
+    transition: 5s ease-in;
+  }
+}
