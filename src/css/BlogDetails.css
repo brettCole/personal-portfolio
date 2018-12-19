@@ -1,0 +1,21 @@
+#blog-profile-pic {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+#blog-divider {
+  margin-top: 100px;
+}
+
+.individual-blog-container {
+  font-family: Montserrat;
+  font-weight: 200;
+}
+
+.individual-blog-container a {
+  color: black;
+}
+
+.individual-blog-container div div {
+  margin-top: 10px;
+}
