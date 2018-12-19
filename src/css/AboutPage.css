@@ -23,3 +23,31 @@
     margin-top: -5vh;
   }
 }
+
+.main-about {
+  transform: translateY(-62px);
+}
+
+.main-about section {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+}
+
+.about-description-section {
+  margin-bottom: 50px;
+}
+
+.about-description-section h1 {
+  font-family: Norwester;
+}
+
+.about-description-section div {
+  font-family: Montserrat;
+  font-weight: 200;
+}
+
+.about-description-section h3 {
+  vertical-align: -10%;
+  line-height: 1rem;
+}

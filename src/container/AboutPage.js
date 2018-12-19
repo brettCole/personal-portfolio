@@ -13,12 +13,12 @@ const AboutPage = () => {
   return (
     <>
       <NavbarAndMenu />
-      <div style={{'transform':'translateY(-62px)'}}>
+      <div className='main-about'>
         <Fade right>
           <section 
             className='section is-paddingless profilePic' 
-            style={{'backgroundImage':`url(${Profile})`, 'backgroundRepeat':'no-repeat', 'backgroundSize':'contain', 'backgroundPosition':'center top'}}>
-          </section>
+            style={{'backgroundImage':`url(${Profile})`}}
+          />
         </Fade>
       </div>
       <AboutDescription />
