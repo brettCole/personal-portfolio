@@ -50,7 +50,7 @@ class NavbarAndMenu extends Component {
         <div className='navbar-menu overlay' id='navMenu'>
           <div className='navbar-end overlay-content'>
             <a className='navbar-item' href='/#projects'>Projects</a>
-            <a className='navbar-item' href='/about'>About</a>
+            <a className='navbar-item' href='codercalledcole.com/about'>About</a>
             <a className='navbar-item' href='/blog'>Blog</a>
           </div>
         </div>
