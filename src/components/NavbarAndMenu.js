@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import 'bulma/css/bulma.css';
 import '../css/NavbarAndMenu.css';
-
 import Logo from './Logo';
 
 class NavbarAndMenu extends Component {
@@ -30,21 +29,25 @@ class NavbarAndMenu extends Component {
       <nav 
         class='navbar is-transparent' 
         role='navigation' 
-        aria-label='main navigation' 
-        style={{'backgroundColor':'transparent'}}
+        aria-label='main navigation'  
       >
         <div className='navbar-brand'>
           <a className='navbar-item' href='/'>
             <Logo />
           </a>
-          <div role='button' className='navbar-burger' data-target='navMenu' aria-label='menu' aria-expanded='false' style={{'fontFamily':'Montserrat', 'fontWeight':'200'}}>
+          <div 
+            role='button' 
+            className='navbar-burger' 
+            data-target='navMenu' 
+            aria-label='menu' 
+            aria-expanded='false' 
+          >
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
           </div>
         </div>
         <div className='navbar-menu overlay' id='navMenu'>
-          {/* <div className='navbar-end overlay-content' style={{'fontFamily':'Montserrat', 'fontWeight':'200'}}> */}
           <div className='navbar-end overlay-content'>
             <a className='navbar-item' href='/#projects'>Projects</a>
             <a className='navbar-item' href='/about'>About</a>

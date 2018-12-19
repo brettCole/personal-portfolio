@@ -2,26 +2,29 @@
   .line__label {
     transform: rotateY(45deg);
   }
-
-  /* .clipBackground {
-    -webkit-clip-path: polygon(0 calc(2% - 3vw), 100% 0, 100% 95%, 0% 100%);
-    clip-path: polygon(0 calc(2% - 3vw), 100% 0, 100% 95%, 0% 100%);  
-  } */
 }
 
-/* @media only screen and (max-width: 2961px) {
-  .clipBackground {
-    -webkit-clip-path: polygon(0 9%, 100% 0, 100% 95%, 0% 100%);
-    clip-path: polygon(0 calc(2% - 3vw), 100% 0, 100% 95%, 0% 100%);  
-  }
-} */
+.skill-section {
+  background: linear-gradient(to bottom, #0a3e1c 18%, #157d39 79%, #1fbc56)
+}
 
-/* .clipBackground {
-  -webkit-clip-path: polygon(0 9%, 100% 0, 100% 95%, 0% 100%);
-  clip-path: polygon(0 calc(12% - 2vw), 100% 0, 100% 95%, 0% 100%);
-} */
+.skill-section h1 {
+  margin-bottom: 5rem;
+  font-family: Norwester;
+  padding-top: 50px;
+}
+
+.skill-section h4 {
+  font-family: Montserrat;
+  font-weight: 100;
+}
+
+.skill-graph {
+  margin-top: 60px;
+  padding-bottom: 60px;
+}
+
 .clipBackground {
-  /* -webkit-clip-path: polygon(0 9%, 100% 0, 100% 95%, 0% 100%); */
   clip-path: polygon(0 40px, 100% 0, 100% 95%, 0% 100%);
   transform: translateY(-41px)
 }
@@ -32,6 +35,9 @@
   height: 400px;
   margin: auto;
   position: relative;
+  margin-bottom: 50px;
+  font-family: Montserrat;
+  font-weight: 300;
 }
 
 .content ul {
@@ -125,8 +131,6 @@
   height: 30px;
   margin-bottom: 10px;
   background: linear-gradient(to left, #4cb8c4, #3cd3aa);
-  /* animation: 1s anim-lightspeed-in ease forwards; */
-  
 }
 
 .chart__label {
@@ -135,7 +139,7 @@
   color: white;
 }
 
-.listItem {
+.list-item {
   animation-name: eachTechItem;
   animation-duration: 2.5s;
   animation-timing-function: ease;
@@ -144,11 +148,16 @@
   opacity: 0;
 }
 
+.chart ul li.list-item {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 0;
+}
+
 .item {
   opacity: 0;
   animation-name: revealItem;
   animation-duration: 3s;
-  /* animation-delay: 2s; */
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }

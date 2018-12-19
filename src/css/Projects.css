@@ -1,0 +1,80 @@
+.project-section {
+  background: linear-gradient(to bottom, #260042 18%, #4B0082 79%, #6F339B);
+  clip-path: polygon(0 2%, 100% 0, 100% calc(100% - 40px), 0 100%);
+}
+
+.project-section h1 {
+  margin-bottom: 5rem;
+  font-family: Norwester;
+  padding-top: 50px;
+}
+
+.project-section h4 {
+  font-family: Montserrat;
+  font-weight: 100;
+}
+
+.customer-project-header {
+  margin-top: 50px;
+}
+
+.projects-container {
+  position: relative;
+}
+
+.customer-project-div {
+  padding-bottom: 70px;
+}
+
+.individual-project-container {
+  margin-right: 0.75rem;
+  margin-top: 4rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.individual-project-container header {
+  transform: translateY(-3rem);
+  margin-bottom: 0;
+}
+
+.individual-project-container header p {
+  color: #260042;
+  font-family: Norwester;
+}
+
+.front-card {
+  margin-bottom: 0;
+  font-family: Montserrat;
+  top: 20%;
+}
+
+.cardContainer {
+  position: relative;
+  height: 16.875rem;
+  transform-style: preserve-3d;
+  perspective: 150em;
+  box-shadow: 1em 1em 2em rgba(0,0,0,.2);
+}
+
+.card__side {
+  backface-visibility: hidden;
+  width: 100%;
+  transition: all .6s ease;
+  position: absolute;
+  left: 0;
+}
+
+.card__side--back {
+  transform: rotateY(180deg);
+  padding-top: 0;
+}
+
+.cardFlipped .card__side--front {
+   transform: rotateY(-180deg);
+}
+
+.cardFlipped .card__side--back {
+  transform: rotate(0);
+}

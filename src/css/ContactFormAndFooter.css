@@ -1,0 +1,49 @@
+.contact-section {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.contact-section h3 {
+  font-family: Norwester;
+}
+
+.contact-container {
+  width: 24rem;
+}
+
+.contact-container form input {
+  border: none;
+  border-bottom: 1px solid lightGrey;
+  box-shadow: none;
+  border-radius: 0;
+  font-family: Montserrat;
+  font-weight: 100;
+}
+
+.contact-container form label {
+  font-family: Montserrat;
+  font-weight: 100;
+}
+
+.contact-container form button {
+  background-color: #4b0082;
+  font-family: Norwester;
+}
+
+footer:first-child {
+  margin-bottom: 0;
+}
+
+footer:last-child {
+  font-family: Montserrat;
+  font-weight: 300;
+}
+
+footer p {
+  font-family: Montserrat;
+  font-weight: 200;
+}
+
+footer h5 {
+  font-family: Norwester;
+}

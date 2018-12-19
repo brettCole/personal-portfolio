@@ -1,10 +1,8 @@
-import React, { Component } from 'react'
-import 'bulma/css/bulma.css'
-import '../css/WelcomingHeader.css' 
+import React, { Component } from 'react';
+import 'bulma/css/bulma.css';
+import '../css/WelcomingHeader.css';
 import Fade from 'react-reveal/Fade';
-import 'typeface-montserrat/index.css';
-import 'typeface-norwester/index.css';
-import TimeOfDayMessage from './TimeOfDayMessage'
+import TimeOfDayMessage from './TimeOfDayMessage';
 
 class WelcomingHeader extends Component {
   constructor(props) {
@@ -71,29 +69,33 @@ class WelcomingHeader extends Component {
   render () {
 
     return (
-      <section className='section is-medium' style={{'paddingLeft':'0px', 'paddingRight':'0px', 'marginTop':'50px'}}>
+      <section className='section is-medium header-section'>
         <div className='has-text-centered'>
-          <div className='container' style={{'marginTop':'-5rem', 'marginBottom':'2.5rem'}}>
+          <div className='container header-container'>
             <Fade mirror={true}>
-            <h1 className='title is-1' style={{'fontFamily':'Norwester', 'fontWeight':'900'}}>Full-Stack Developer</h1>
+            <h1 className='title is-1'>Full-Stack Developer</h1>
             </Fade>
           </div>
           <div className='container column is-full-mobile'>
             <h4 className='subtitle is-4'>
               <Fade right>
-              <TimeOfDayMessage />
+                <TimeOfDayMessage />
               </Fade>
             </h4>
             <Fade left>
-            <h4 className='subtitle is-4' style={{'fontFamily':'Montserrat', 'fontWeight':'200'}}> 
-              <h3 className={'subtitle is-3 is-marginless is-paddingless is-inline has-text-success sizeDifference' + (this.state.switch ? 'slideWord' : '')} ref={this.myRef} style={{'fontFamily':'Montserrat', 'fontWeight':'300'}}>
-                {this.state.greeting} 
-              </h3>
-               {' '}my name is Brett Cole. I'm looking to empower innovators with their 
-              <h3 className={'subtitle is-3 is-marginless is-paddingless is-inline has-text-success sizeDifference ' + (this.state.switch ? 'slideWord' : '')} style={{'fontFamily':'Montserrat', 'fontWeight':'300'}}> {this.state.project}
-              </h3>. I look forward to getting to know you and contribute to something amazing!
-          </h4>
-          </Fade>
+              <h4 className='subtitle is-4 description'> 
+                <h3 
+                  className={'subtitle is-3 is-marginless is-paddingless is-inline has-text-success sizeDifference' + (this.state.switch ? 'slideWord' : '')} 
+                  ref={this.myRef}
+                >
+                  {this.state.greeting} 
+                </h3>
+                  {' '}my name is Brett Cole. I'm a Full-Stack Developer who is looking to empower innovators with their 
+                <h3 className={'subtitle is-3 is-marginless is-paddingless is-inline has-text-success sizeDifference ' + (this.state.switch ? 'slideWord' : '')}
+                > {this.state.project}
+                </h3>. I am excited to get to know you and contribute to something amazing!
+              </h4>
+            </Fade>
           </div>
         </div>
       </section>

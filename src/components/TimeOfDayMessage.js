@@ -1,5 +1,6 @@
-import React from 'react'
-import 'bulma/css/bulma.css'
+import React from 'react';
+import 'bulma/css/bulma.css';
+import '../css/WelcomingHeader.css';
 
 const TimeOfDay = () => {
   const today = new Date();
@@ -60,13 +61,18 @@ const TimeOfDayMessage = () => {
 
   if (Object.keys(days)[today.getDay()] === 'Monday' && whichSaying === 0 || Object.keys(days)[today.getDay()] === 'Saturday' && whichSaying === 2 || Object.keys(days)[today.getDay()] === 'Sunday' && whichSaying === 2) {
     return (
-      <p className='has-text-centered is-inline'style={{'fontFamily':'Montserrat', 'fontWeight':'200'}}>{days[Object.keys(days)[today.getDay()]][whichSaying]}
-        <span className='is-paddingless' role='img' aria-label='weary face'>😩</span>
+      <p className='has-text-centered time-message is-inline'>
+        {days[Object.keys(days)[today.getDay()]][whichSaying]}
+        <span className='is-paddingless' role='img' aria-label='weary face'>
+          😩
+        </span>
       </p>
     )
   } else {
     return (
-      <p className='has-text-centered is-inline' style={{'fontFamily':'Montserrat', 'fontWeight':'200'}}>{days[Object.keys(days)[today.getDay()]][whichSaying]}</p>
+      <p className='has-text-centered time-message is-inline'>
+        {days[Object.keys(days)[today.getDay()]][whichSaying]}
+      </p>
     )
   }
 }
