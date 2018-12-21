@@ -1,5 +1,5 @@
 [build]
-base = 'personal-portfolio'
+# base = 'personal-portfolio'
 publish = 'personal-portfolio/build/'
 command = 'yarn build'
 
