@@ -1,8 +1,8 @@
-[build]
+# [build]
 # base = 'personal-portfolio'
 # publish = 'personal-portfolio/build/'
-publish = '/public'
-command = 'yarn build'
+# publish = '/public'
+# command = 'yarn build'
 
 [[redirects]]
 from = '/*'
