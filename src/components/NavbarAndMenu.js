@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import 'bulma/css/bulma.css';
 import '../css/NavbarAndMenu.css';
 import Logo from './Logo';
+import { Link } from 'react-router-dom';
 
 class NavbarAndMenu extends Component {
 
@@ -50,7 +51,7 @@ class NavbarAndMenu extends Component {
         <div className='navbar-menu overlay' id='navMenu'>
           <div className='navbar-end overlay-content'>
             <a className='navbar-item' href='/#projects'>Projects</a>
-            <a className='navbar-item' href='/about'>About</a>
+            <Link className='navbar-item' to='/about'>About</Link>
             <a className='navbar-item' href='/blog'>Blog</a>
           </div>
         </div>
