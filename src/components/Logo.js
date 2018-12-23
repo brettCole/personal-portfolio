@@ -1,9 +1,10 @@
 import React from 'react';
 import 'bulma/css/bulma.css';
+import '../css/NavbarAndMenu.css';
 
 const Logo = () => {
   return (
-    <h2 className='title is-2'>Logo</h2>
+    <h3 className='title is-3 logo'>Brett Cole</h3>
   )
 }
 

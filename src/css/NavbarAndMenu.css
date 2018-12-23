@@ -132,6 +132,10 @@
 	animation-timing-function: linear;
 }
 
+.logo {
+	font-family: Norwester;
+}
+
 @keyframes clockwise {
 	from {
 		transform: rotate(0deg);
