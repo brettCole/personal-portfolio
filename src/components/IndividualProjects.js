@@ -29,7 +29,7 @@ class IndividualProjects extends Component {
         onClick={this.state.flip ? this.flipCardBack : this.flipCard}
       >
         <header className='box'>
-          <p className='title is-4 is-centered'>{this.props.title}</p>
+          <p className='title is-4 is-centered'><a href={this.props.link}>{this.props.title}</a></p>
         </header>
         <div className={`card__side front-card card__side--front${this.state.flip ? 'cardFlipped' : ''}`}>
           <div className={`card-content is-centered is-paddingless card__side card__side--back ${this.state.flip ? ' cardBack cardFlipped' : ' back'}`}>

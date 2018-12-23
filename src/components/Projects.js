@@ -30,29 +30,34 @@ const Projects = () => {
         <div className='columns is-mobile is-multiline is-variable is-3 is-centered projects-container'>
           <IndividualProjects
             title = 'Portfolio Site'
+            link = 'https://github.com/brettCole/personal-portfolio'
             description = "Personal portfolio to display personal work. Some new tools and adding some more soon."
             techStack = {['React', 'Bulma framework', 'Node.js', 'Express.js']}
           />
           <IndividualProjects
             title = 'Jeopardy'
+            link = 'https://github.com/brettCole/Jeopardy'
             backgroundImage = {Jeopardy}
             description = 'Similar to Jeopardy app. Set up for three teams to go head to head in full rounds of questions with a final Jeopardy round. Great for family and friends.'
             techStack = {['React', 'Redux', 'ResponsiveVoice.js', 'jService Gem', 'Ruby on Rails']}
           />
           <IndividualProjects
             title = 'Adios'
+            link = 'https://github.com/brettCole/adios2'
             backgroundImage = {Adios}
             description = "Vacation rental app. Used Faraday Gem to access Homeaway's API for listings. Then used React and Redux to display rentals. Also has checklist creation for users."
             techStack = {['React', 'Redux', 'HomeAway API', 'Faraday Gem', 'Reactstrap', 'Ruby on Rails']}
           />
           <IndividualProjects
             title = 'Lets Get Cookin'
+            link = 'https://github.com/brettCole/Lets-get-cookin'
             backgroundImage = {LetsGetCookin}
             description = "Ruby on Rails app to add favorite recipes. Plus displays the details of each dish. Simple layout."
             techStack = {['Ruby', 'Ruby on Rails']}
           />
           <IndividualProjects
             title = 'Top Ski Resort Ruby Gem'
+            link = 'https://github.com/brettCole/Top_Ranked_Ski_Resorts-cli-gem'
             backgroundImage = {SkiResortGem}
             description = "Top ranked ski resorts across the United States. Displays all of the details of each chosen mountain from height to number of lifts."
             techStack = {['Ruby']}

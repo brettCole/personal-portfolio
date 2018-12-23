@@ -44,6 +44,10 @@
   font-family: Norwester;
 }
 
+.individual-project-container header p a {
+  color: #260042;
+}
+
 .front-card {
   margin-bottom: 0;
   font-family: Montserrat;
