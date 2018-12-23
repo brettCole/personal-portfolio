@@ -19,7 +19,7 @@ const AboutDescription = () => {
           </p>
           <p className='column is-three-quarters-tablet has-text-justified'>
             Here is a recap of my <h3 className='subtitle is-3 is-marginless is-paddingless is-inline'>
-              <a href='/#projects' className='has-text-success is-paddingless'>
+              <a href='/#skills' className='has-text-success is-paddingless'>
                 skills
               </a>
             </h3>. Instead I would rather give out free copies of my <h3 className='subtitle is-3 is-marginless is-paddingless is-inline'>

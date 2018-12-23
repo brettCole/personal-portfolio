@@ -7,7 +7,7 @@ import SkillBarGraph from './SkillBarGraph';
 
 const Skills = () => {
   return (
-    <section className='section content has-text-centered clipBackground skill-section is-marginless'>
+    <section className='section content has-text-centered clipBackground skill-section is-marginless' id='skills'>
       <Fade left>
         <h1 className='title is-1 has-text-white'>Skills</h1>
       </Fade>

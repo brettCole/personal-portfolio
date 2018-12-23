@@ -32,7 +32,7 @@ class ContactInfoForm extends Component {
 
   render() {
     return (
-      <section className='section'>
+      <section className='section contact-section'>
         <Fade left>
           <h3 className='title is-3'>Please introduce yourself and tell me a little bit about your project</h3>
         </Fade>
