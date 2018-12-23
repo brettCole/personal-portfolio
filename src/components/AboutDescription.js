@@ -12,25 +12,28 @@ const AboutDescription = () => {
       <Fade right>
         <div className='columns is-multiline is-centered'>
           <p className='column is-three-quarters-tablet has-text-justified'>
-            I am a developer who is always looking for the next coding adventure. I have always enjoyed working with computers. I don't like to limit myself by saying I just program on the front end or back end. I would much rather say I try to write code wherever I am most needed in that moment.
+            I am a developer who is constantly looking for my next coding adventure. I have always had a passion for developing code. I dont't like to box myself in by saying I work strictly on the front end or only on the back end. I prefer knowing how to write the code that is necessary in that moment.
           </p>
           <p className='column is-three-quarters-tablet has-text-justified'>
-            When I'm not programming, I love to work on cars and snowboarding. I haven't had the chance, but I would love to head west and try their resorts. I love being a developer. But I love being a husband and father more. If it wasn't for my wife none of this would even be possible.
+            I love being a Full-Stack Developer, but I love being a husband and father more. If it wasn't for my wife, all of this would never of happened. They keep me motivated.
           </p>
           <p className='column is-three-quarters-tablet has-text-justified'>
-            Here is a recap of my <h3 className='subtitle is-3 is-marginless is-paddingless is-inline'>
+            When I am not programming, I love to work on cars and snowboard. Hopefully some day I'll get the chance to head west and try some mountains out there.
+          </p>
+          <p className='column is-three-quarters-tablet has-text-justified'>
+            Anyway, back to programming. Here is a quick recap of my <h3 className='subtitle is-3 is-marginless is-paddingless is-inline'>
               <a href='/#skills' className='has-text-success is-paddingless'>
                 skills
               </a>
-            </h3>. Instead I would rather give out free copies of my <h3 className='subtitle is-3 is-marginless is-paddingless is-inline'>
+            </h3>. Here is my <h3 className='subtitle is-3 is-marginless is-paddingless is-inline'>
               <a href='https://learn.co/brettCole/resume' className='has-text-success'>
                 resume
               </a>
-            </h3>. Also, check out my <h3 className='subtitle is-3 is-marginless is-paddingless is-inline'>
+            </h3> if you would like to take a look at some of my previous work. Also, check out my <h3 className='subtitle is-3 is-marginless is-paddingless is-inline'>
               <a href='/blog' className='has-text-success'>
                 blog
               </a>
-            </h3> if you wonna know what I've been thinking. Shoot me a message with your ideas and lets see if we can make things happen.
+            </h3> if you wonna know what I've been thinking. Shoot me a message with your ideas and I look forward to creating something great with you!
           </p>
         </div>
       </Fade>
