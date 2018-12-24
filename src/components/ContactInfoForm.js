@@ -32,8 +32,13 @@ class ContactInfoForm extends Component {
       body: this.encode({ "form-name": "contact", ...this.state })
     })
       .then(() => {
-        this.setState({ [name]: ''})
-        alert('Success!')
+        this.setState({
+          name: '',
+          email: '',
+          phone: '',
+          details: ''
+        });
+        alert('Success!');
       })
       .catch(error => alert(error));
 
