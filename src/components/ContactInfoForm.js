@@ -27,7 +27,7 @@ class ContactInfoForm extends Component {
 
   handleSubmit = (e) => {
     debugger;
-    fetch('', {
+    fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': "application/x-www-form-urlencoded" },
       body: this.encode({ "form-name": "contact", ...this.state })
@@ -66,7 +66,7 @@ class ContactInfoForm extends Component {
               method='POST' 
               onSubmit={this.handleSubmit.bind(this)} 
               netlify-honeypot='bot-field' 
-              data-netlify='true'
+              netlify='true'
             > 
               <input type="hidden" name="form-name" value="contact" />
               <p className="hidden">
