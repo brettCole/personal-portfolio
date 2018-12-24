@@ -26,6 +26,7 @@ class ContactInfoForm extends Component {
   }
 
   handleSubmit = (e) => {
+    debugger;
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': "application/x-www-form-urlencoded" },
@@ -60,7 +61,14 @@ class ContactInfoForm extends Component {
         </Fade>
         <Fade right>
           <div className='container is-centered card box contact-container'>
-            <form name='contact' method='POST' onSubmit={this.handleSubmit} netlify-honeypot='bot-field' data-netlify='true'> 
+            <form 
+              name='contact' 
+              method='POST' 
+              onSubmit={this.handleSubmit.bind(this)} 
+              netlify-honeypot='bot-field' 
+              data-netlify='true'
+            > 
+              <input type="hidden" name="form-name" value="contact" />
               <p className="hidden">
                 <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
               </p>

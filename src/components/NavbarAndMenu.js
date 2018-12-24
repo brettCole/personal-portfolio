@@ -28,7 +28,7 @@ class NavbarAndMenu extends Component {
   render() {
     return (
       <nav 
-        class='navbar is-transparent' 
+        className='navbar is-transparent' 
         role='navigation' 
         aria-label='main navigation'  
       >
