@@ -31,7 +31,10 @@ class ContactInfoForm extends Component {
       headers: { 'Content-Type': "application/x-www-form-urlencoded" },
       body: this.encode({ "form-name": "contact", ...this.state })
     })
-      .then(() => alert('Success!'))
+      .then(() => {
+        this.setState({ [name]: ''})
+        alert('Success!')
+      })
       .catch(error => alert(error));
 
     e.preventDefault();
