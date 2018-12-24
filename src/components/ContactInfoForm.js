@@ -61,7 +61,7 @@ class ContactInfoForm extends Component {
         <Fade right>
           <div className='container is-centered card box contact-container'>
             <form name='contact' method='POST' onSubmit={this.handleSubmit} netlify-honeypot='bot-field' data-netlify='true'> 
-              <p class="hidden">
+              <p className="hidden">
                 <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
               </p>
               <div className='field'>

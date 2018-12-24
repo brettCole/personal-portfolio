@@ -20,6 +20,10 @@
   font-weight: 100;
 }
 
+.contact-container form p {
+  display: none;
+}
+
 .contact-container form label {
   font-family: Montserrat;
   font-weight: 100;
