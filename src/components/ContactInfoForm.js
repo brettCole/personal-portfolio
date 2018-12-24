@@ -5,6 +5,12 @@ import Fade from 'react-reveal/Fade';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
+const encode = (data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
+
 class ContactInfoForm extends Component {
   constructor(props) {
     super(props)
@@ -17,20 +23,13 @@ class ContactInfoForm extends Component {
     }
   }
 
-  // handleInputChange = (e) => {
-  //   const target = e.target;
-  //   const value = target.value;
-  //   const name = target.name;
-
-  //   this.setState({ [name]:value });
-  // }
   handleInputChange = e => this.setState({ [e.target.name]: e.target.value })
 
   handleSubmit = (e) => {
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': "application/x-www-form-urlencoded" },
-      body: this.encode({ "form-name": "contact", ...this.state })
+      body: encode({ "form-name": "contact", ...this.state })
     })
       .then(() => {
         this.setState({
@@ -46,12 +45,6 @@ class ContactInfoForm extends Component {
     e.preventDefault();
   }
 
-  encode = (data) => {
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
-  }
-
   render() {
     const { name, email, phone, details } = this.state;
     return (
@@ -64,9 +57,9 @@ class ContactInfoForm extends Component {
             <form 
               name='contact' 
               method='POST' 
-              onSubmit={this.handleSubmit.bind(this)} 
-              netlify-honeypot='bot-field' 
-              data-netlify={true}
+              onSubmit={this.handleSubmit} 
+              data-netlify-honeypot='bot-field' 
+              data-netlify='true'
             > 
               <input type="hidden" name="form-name" value="contact" />
               <p className="hidden">
