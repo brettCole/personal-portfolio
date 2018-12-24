@@ -26,11 +26,25 @@ class ContactInfoForm extends Component {
   }
 
   handleSubmit = (e) => {
-    // e.preventDefault();
-    // debugger;
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': "application/x-www-form-urlencoded" },
+      body: this.encode({ "form-name": "contact", ...this.state })
+    })
+      .then(() => alert('Success!'))
+      .catch(error => alert(error));
+
+    e.preventDefault();
+  }
+
+  encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
   }
 
   render() {
+    const { name, email, phone, details } = this.state;
     return (
       <section className='section contact-section'>
         <Fade left>
@@ -38,13 +52,15 @@ class ContactInfoForm extends Component {
         </Fade>
         <Fade right>
           <div className='container is-centered card box contact-container'>
-            <form onSubmit={this.handleSubmit()} method='POST'>
+            <form name='contact' method='POST' onSubmit={this.handleSubmit}> 
               <div className='field'>
                 <div className='control has-icons-left'>
                   <input 
                     className='input has-text-weight-light' 
                     name='name' 
-                    type='text' 
+                    type='text'
+                    value={name}
+                    onChange={this.handleInputChange}
                     placeholder='First and Last Name' 
                   />
                   <span className='icon is-small is-left'>
@@ -58,6 +74,8 @@ class ContactInfoForm extends Component {
                     className='input has-text-weight-light' 
                     name='email' 
                     type='email' 
+                    value={email}
+                    onChange={this.handleInputChange}
                     placeholder='Email' 
                   />
                   <span className='icon is-small is-left'>
@@ -71,6 +89,8 @@ class ContactInfoForm extends Component {
                     className='input has-text-weight-light' 
                     name='phone' 
                     type='number' 
+                    value={phone}
+                    onChange={this.handleInputChange}
                     placeholder='Phone Number'
                   />
                   <span className='icon is-small is-left'>
@@ -81,11 +101,16 @@ class ContactInfoForm extends Component {
               <div className='field'>
                 <label className='label has-text-grey-light has-text-weight-light'>Project Description</label>
                 <div className='control'>
-                  <textarea className='textarea' name='details'></textarea>
+                  <textarea 
+                    className='textarea' 
+                    name='details' 
+                    value={details} 
+                    onChange={this.handleInputChange}
+                  />
                 </div>
               </div>
               <div className="control has-text-centered">
-                <button className='button has-text-white'>Submit</button>
+                <button className='button has-text-white' type='submit'>Submit</button>
               </div>
             </form>
           </div>
