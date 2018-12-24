@@ -52,7 +52,7 @@ class ContactInfoForm extends Component {
         </Fade>
         <Fade right>
           <div className='container is-centered card box contact-container'>
-            <form name='contact' method='POST' onSubmit={this.handleSubmit}> 
+            <form name='contact' method='POST' onSubmit={this.handleSubmit} data-netlify='true'> 
               <div className='field'>
                 <div className='control has-icons-left'>
                   <input 
