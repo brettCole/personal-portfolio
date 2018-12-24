@@ -17,16 +17,16 @@ class ContactInfoForm extends Component {
     }
   }
 
-  handleInputChange = (e) => {
-    const target = e.target;
-    const value = target.value;
-    const name = target.name;
+  // handleInputChange = (e) => {
+  //   const target = e.target;
+  //   const value = target.value;
+  //   const name = target.name;
 
-    this.setState({ [name]:value });
-  }
+  //   this.setState({ [name]:value });
+  // }
+  handleInputChange = e => this.setState({ [e.target.name]: e.target.value })
 
   handleSubmit = (e) => {
-    debugger;
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': "application/x-www-form-urlencoded" },
@@ -66,7 +66,7 @@ class ContactInfoForm extends Component {
               method='POST' 
               onSubmit={this.handleSubmit.bind(this)} 
               netlify-honeypot='bot-field' 
-              netlify='true'
+              data-netlify='true'
             > 
               <input type="hidden" name="form-name" value="contact" />
               <p className="hidden">
