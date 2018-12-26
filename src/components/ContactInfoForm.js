@@ -60,6 +60,7 @@ class ContactInfoForm extends Component {
               onSubmit={this.handleSubmit} 
               data-netlify-honeypot='bot-field' 
               data-netlify='true'
+              action='/'
             > 
               <input type="hidden" name="form-name" value="contact" />
               <p className="hidden">
