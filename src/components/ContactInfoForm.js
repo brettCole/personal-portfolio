@@ -57,15 +57,8 @@ class ContactInfoForm extends Component {
             <form 
               name='contact' 
               method='POST' 
-              onSubmit={this.handleSubmit} 
-              data-netlify-honeypot='bot-field' 
-              data-netlify='true'
-              action='/'
+              onSubmit={this.handleSubmit}
             > 
-              <input type="hidden" name="form-name" value="contact" />
-              <p className="hidden">
-                <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-              </p>
               <div className='field'>
                 <div className='control has-icons-left'>
                   <input 
