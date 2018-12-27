@@ -23,7 +23,7 @@ class WelcomingHeader extends Component {
     this.interval = setInterval(() => {
       this.switchGreeting();
       this.switchProject();
-    }, 3000)
+    }, 5000)
   }
 
   componentWillUnmount() {
