@@ -59,6 +59,7 @@ class ContactInfoForm extends Component {
               method='POST' 
               onSubmit={this.handleSubmit}
             > 
+              <input type="hidden" name="form-name" value="contact" />
               <div className='field'>
                 <div className='control has-icons-left'>
                   <input 
