@@ -2,19 +2,11 @@
   .profilePic {
     height: 53vh;
   }
-
-  .headerTitle {
-    margin-top: -10vh;
-  }
 }
 
 @media only screen and (min-width: 768px) {
   .profilePic {
     height: 80vh;
-  }
-
-  .headerTitle {
-    margin-top: -20vh;
   }
 }
 
