@@ -48,7 +48,7 @@ class ContactInfoForm extends Component {
   render() {
     const { name, email, phone, details } = this.state;
     return (
-      <section className='section contact-section'>
+      <section className='section contact-section' id='contact-form'>
         <Fade left>
           <h3 className='title is-3'>Please introduce yourself and tell me a little bit about your project</h3>
         </Fade>

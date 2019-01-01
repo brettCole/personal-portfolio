@@ -10,7 +10,9 @@ const CustomerProject = () => {
             Your awesome project here!
           </p>
         </div>
-        <Logo style={{width:'10em'}}/>
+        <a href='#contact-form'>
+          <Logo style={{width:'10em'}}/>
+        </a>
       </div>
     </div>
   )
