@@ -6,9 +6,9 @@ import '../css/BlogDetails.css';
 const IndividualBlogs = (props) => {
   return (
     <div className='container is-medium individual-blog-container'>
-      <p className='has-text-weight-light has-text-grey-light'>
+      {/* <p className='has-text-weight-light has-text-grey-light'>
         {props.date}
-      </p>
+      </p> */}
       <h3 className='title is-3'>
         <a href={props.blogLink}>
           {props.blogTitle}
