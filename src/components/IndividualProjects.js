@@ -31,7 +31,7 @@ class IndividualProjects extends Component {
       >
         <header className='box'>
           <p className='title is-4 is-centered'>
-            <a className='tooltip is-tooltip-bottom' data-tooltip='View Project' href={this.props.link}>
+            <a className='tooltip is-tooltip-bottom' data-tooltip='View Project' href={this.props.link} target='_blank'>
               {this.props.title}
             </a>
           </p>
