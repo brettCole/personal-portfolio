@@ -21,7 +21,7 @@ const Projects = () => {
         <h1 className='title is-1 has-text-white'>Projects</h1>
       </Fade>
       <Fade right>
-        <h4 className='subtitle is-4 has-text-white has-text-weight-light'>Currently, I am working on a site for a smaller automotive business that is local to me. Really enjoying the experience.</h4>
+        <h4 className='subtitle is-4 has-text-white has-text-weight-light'>Currently, I am working on a site for an independent automotive business local to me. As well as an amazing photographer. Greatly enjoying the experience.</h4>
       </Fade>
       <Fade left>
         <h4 className='subtitle is-4 has-text-white has-text-weight-light'>Here are some recent projects I have completed.</h4>
