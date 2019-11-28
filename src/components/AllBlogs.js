@@ -17,6 +17,7 @@ const AllBlogs = () => {
           blogDescription = 'The thought behind classed in most programming languages is universal. However, the structure of the class itself is what may change...'
         />
       </Fade>
+      <div className='is-full is-divider' id='blog-divider' />
       <Fade right>
         <IndividualBlogs
           blogLink = 'https://medium.com/better-programming/recursion-recursion-recursion-made-simple-6b10e641e680'
@@ -25,6 +26,7 @@ const AllBlogs = () => {
           blogDescription = 'What happens when a function calls itself?'
         />
       </Fade>
+      <div className='is-full is-divider' id='blog-divider' />
       <Fade left>
         <IndividualBlogs
           blogLink = 'https://medium.com/@acodercalledcole/settled-in-old-ways-try-react-render-props-for-something-different-e30e8b06343a'
