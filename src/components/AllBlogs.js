@@ -11,6 +11,22 @@ const AllBlogs = () => {
     <section className='section is-centered'>
       <Fade left>
         <IndividualBlogs
+          blogLink = 'https://medium.com/swlh/understanding-python-class-42ee41f8c220'
+          /* Nov 11, 2019 */
+          blogTitle = 'Understanding Python class'
+          blogDescription = 'The thought behind classed in most programming languages is universal. However, the structure of the class itself is what may change...'
+        />
+      </Fade>
+      <Fade right>
+        <IndividualBlogs
+          blogLink = 'https://medium.com/better-programming/recursion-recursion-recursion-made-simple-6b10e641e680'
+          /* date = 'Oct 20, 2019' */
+          blogTitle = 'Recursion... Recursion... Recursion... Made Simple'
+          blogDescription = 'What happens when a function calls itself?'
+        />
+      </Fade>
+      <Fade left>
+        <IndividualBlogs
           blogLink = 'https://medium.com/@acodercalledcole/settled-in-old-ways-try-react-render-props-for-something-different-e30e8b06343a'
           /* date = 'July 28, 2018' */
           blogTitle = 'Settled in old ways. Try React render.props for something different'
