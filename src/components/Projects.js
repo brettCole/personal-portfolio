@@ -17,6 +17,15 @@ const Projects = () => {
       className='section content has-text-centered is-marginless project-section'
       id='projects'  
     >
+      <Fade right>
+        <h1 className='title is-1 has-text-white'>Previouse Work</h1>
+      </Fade>
+        <Fade left>
+          <h4 className='subtitle is-4 has-text-white has-text-weight-light'>Quadratec - Front End Developer</h4>
+        </Fade>
+        <Fade right>
+          <h4 className='subtitle is-4 has-text-white has-text-weight-light'>Urality - Front End Developer</h4>
+        </Fade>
       <Fade left>
         <h1 className='title is-1 has-text-white'>Projects</h1>
       </Fade>

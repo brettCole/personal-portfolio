@@ -73,7 +73,11 @@ class WelcomingHeader extends Component {
         <div className='has-text-centered'>
           <div className='container header-container'>
             <Fade mirror={true}>
-            <h1 className='title is-1'>Full-Stack Developer</h1>
+              <h1 style={{'color':'red'}}>Let's be honest, this site kinda sucks!😂</h1>
+              <h1 style={{'color':'red'}}>That's why it's currently in a full remodel, so stay tuned!</h1>
+            </Fade>
+            <Fade mirror={true}>
+              <h1 className='title is-1'>Full-Stack Developer</h1>
             </Fade>
           </div>
           <div className='container column is-full-mobile'>
